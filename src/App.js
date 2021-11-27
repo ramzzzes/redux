@@ -98,7 +98,7 @@ function App() {
               {Object.keys(user).length === 0 && isLoading &&
                   <form method="POST" onSubmit={handleSubmit}>
                       <input type="text" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-                      <input type="text" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                      <input type="text" placeholder="Password new" value={password} onChange={(e) => setPassword(e.target.value)}/>
                       <button type="submit">Login</button>
                       <br/>
                       {JSON.stringify(errors)}
